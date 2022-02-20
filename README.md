@@ -37,6 +37,8 @@ Make sure to remove any indentation in your override file, otherwise the indenta
 
 The update script will copy the base configuration into the Marlin directory and then go over the override files line-by-line and replace the whole line with the matching settings key in the Marlin configuration.
 
+If you want to use a custom bootscreen or status screen, you can place these files into the Overrides folder. They will be automatically copied when running `update.sh`.
+
 ## Building
 
 After executing the `update.sh` script, the `build.sh` script builds marlin using PlatformIO.
