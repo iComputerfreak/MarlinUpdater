@@ -85,5 +85,9 @@ do
     done < "$filename"
 done
 
+if [[ -x "additional.sh" ]]; then
+    ./additional.sh
+fi
+
 cd ..
 echo "$latest_version" > .current_version
